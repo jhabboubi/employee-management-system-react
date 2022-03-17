@@ -8,15 +8,13 @@ function App() {
   return (
     <div>
       <Router>
+        <HeaderComponent />
         <div className="container">
-          <HeaderComponent />
-          <div className="container">
-            <Routes>
-              <Route path="/employees" element={<ListEmployeeComponent />} />
-            </Routes>
-          </div>
-          <FooterComponent />
+          <Routes>
+            <Route path="/employees" element={<ListEmployeeComponent />} />
+          </Routes>
         </div>
+        <FooterComponent />
       </Router>
     </div>
   );
